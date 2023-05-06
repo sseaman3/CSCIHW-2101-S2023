@@ -106,6 +106,7 @@ public class Medals {
         // hint: make a temp variable for the sum and then at the end of the for loop add each sum of
         // each column to the ArrayList medalCounts
         // print the Array list and chart to look like this
+
         // Gold    Silver    Bronze
         // 4       4         5
         ArrayList<Integer> medalCounts = new ArrayList<Integer>();
@@ -117,14 +118,19 @@ public class Medals {
             medalCounts.add(sum);
             sum = 0;
         }
-        System.out.printf("%15s", "Total");
-        for (int i = 0; i < medalCounts.size(); i++) {
-            System.out.printf("%8d", medalCounts.get(i));
-        }
-        System.out.printf("%8s", "X");
+        System.out.printf("%15s\n", "          "+ "Total" + "   " + " Gold" + "    " + "Silver" + "    " + "Bronze" + "   " + "X");
+
+
+        System.out.printf("%15s", " ");
+        System.out.printf("%8d", medalCounts.get(0));
+        System.out.printf("%8d", medalCounts.get(1));
+        System.out.printf("%8d", medalCounts.get(2));
+        
+
+        
     }
-    
 }
+    
 
 
 
